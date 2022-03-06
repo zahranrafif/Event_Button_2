@@ -60,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     //jika email dan password salah
-                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setMessage("Email dan Password Salah").setNegativeButton("Retry", null).create().show();
+                    Toast.makeText(getApplicationContext(), "Email dan Password Salah", Toast.LENGTH_LONG).show();
                 }
             }
         });
