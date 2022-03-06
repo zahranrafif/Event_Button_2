@@ -50,16 +50,16 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else if (password.equals("tanyasaya")) {
-                    //jika login berhasil
+                    //jika Email salah
                     Toast.makeText(getApplicationContext(), "Email yang anda masukkan salah", Toast.LENGTH_LONG).show();
 
                 }
                 else if (nama.equals("zahran.rafif.ft20@mail.umy.ac.id")) {
-                    //jika login berhasil
+                    //jika Password salah
                     Toast.makeText(getApplicationContext(), "Password Salah", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    //jika login gagal
+                    //jika email dan password salah
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("Email dan Password Salah").setNegativeButton("Retry", null).create().show();
                 }
