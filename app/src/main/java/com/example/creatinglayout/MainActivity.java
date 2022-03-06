@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         //menghubungkan variabel edpassword dengan componen button pada Layout
         edpassword=findViewById(R.id.edPassword);
 
-        //membuat fungsi evem untuk button
+        //membuat fungsi evenuntuk button
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
