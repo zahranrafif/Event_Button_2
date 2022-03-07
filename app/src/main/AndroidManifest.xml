@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CreatingLayout">
         <activity
+            android:name=".ActivityKedua"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/label2" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

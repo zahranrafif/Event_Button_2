@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Login App</string>
+    <string name="app_name">LoginApp2Activity</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsignin">Sign-In</string>
+    <string name="tLogin">LOGIN</string>
+    <string name="tData">Your Data</string>
+    <string name="username">Email: </string>
+    <string name="tPassword3">Password: </string>
+    <string name="txemail">Email Result</string>
+    <string name="txpassword">Password Result</string>
+    <string name="label2">Login Berhasil</string>
 </resources>
