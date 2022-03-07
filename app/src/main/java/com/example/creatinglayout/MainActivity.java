@@ -44,8 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 //Menyimpan input user di edittext password kedalam variabel password
                 password = edpassword.getText().toString();
 
+                String Email="zahran@gmail.com";
+                String pass="tanyajaran";
+
                 //Mengecek apakah edittext email dan password sesuai atau tidak (valid atau tidak) isinya
-                if (nama.equals("zahran@gmail.com") && password.equals("tanyajaran")){
+                if (nama.equals(Email) && password.equals(pass)){
                     Toast.makeText(MainActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
 
                     //inisiasi
@@ -66,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
                     //berpindah ke ActivityKedua
                     startActivity(i);
                 }
-                else if (password.equals("tanyajaran")){
+                else if (password.equals(pass)){
                     //jika Email salah
                     Toast.makeText(MainActivity.this, "Email yang anda masukkan salah", Toast.LENGTH_SHORT).show();
                 }
-                else if (nama.equals("zahran@gmail.com")){
+                else if (nama.equals(Email)){
                     //jika Password salah
                     Toast.makeText(MainActivity.this, "Password Salah", Toast.LENGTH_SHORT).show();
                 }
