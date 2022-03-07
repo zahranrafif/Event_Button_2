@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginApp2Activity</string>
+    <string name="app_name">LoginApp3</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsignin">Sign-In</string>
