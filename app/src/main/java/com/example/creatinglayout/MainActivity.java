@@ -3,6 +3,7 @@ package com.example.creatinglayout;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,30 +39,44 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //menyimpan input user di eddittex email kedalam variabel nama
-                nama=edemail.getText().toString();
+                //Menyimpan input user di edittext email kedalam variabel nama
+                nama = edemail.getText().toString();
+                //Menyimpan input user di edittext password kedalam variabel password
+                password = edpassword.getText().toString();
 
-                //menyimpan input user di edittext password kedalam variabel password
-                password=edpassword.getText().toString();
+                //Mengecek apakah edittext email dan password sesuai atau tidak (valid atau tidak) isinya
+                if (nama.equals("zahran@gmail.com") && password.equals("tanyajaran")){
+                    Toast.makeText(MainActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
 
-                if (nama.equals("zahran.rafif.ft20@mail.umy.ac.id")&&password.equals("tanyasaya")){
-                    //jika login berhasil
-                    Toast.makeText(getApplicationContext(), "Login Berhasil",Toast.LENGTH_LONG).show();
+                    //inisiasi
+                    Bundle bn = new Bundle();
 
+                    //memasukkan value dari variabel nama dengan kunci "a" dan dimasukkan kedalam bundle
+                    bn.putString("a", nama.trim());
+
+                    //memasukkan value dari variabel password dengan kunci "b" dan dimasukkan kedalam bundle
+                    bn.putString("b", password.trim());
+
+                    //membuat objek intent berpindah activity dari mainactivity ke ActivityKedua
+                    Intent i = new Intent(MainActivity.this,ActivityKedua.class);
+
+                    //memasukkan bundle kedalam intent untuk dikirimkan ke ActivityKedua
+                    i.putExtras(bn);
+
+                    //berpindah ke ActivityKedua
+                    startActivity(i);
                 }
-                else if (password.equals("tanyasaya")) {
-                    //jika login berhasil
-                    Toast.makeText(getApplicationContext(), "Email yang anda masukkan salah", Toast.LENGTH_LONG).show();
-
+                else if (password.equals("tanyajaran")){
+                    //jika Email salah
+                    Toast.makeText(MainActivity.this, "Email yang anda masukkan salah", Toast.LENGTH_SHORT).show();
                 }
-                else if (nama.equals("zahran.rafif.ft20@mail.umy.ac.id")) {
-                    //jika login berhasil
-                    Toast.makeText(getApplicationContext(), "Password Salah", Toast.LENGTH_LONG).show();
+                else if (nama.equals("zahran@gmail.com")){
+                    //jika Password salah
+                    Toast.makeText(MainActivity.this, "Password Salah", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    //jika login gagal
-                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setMessage("Email dan Password Salah").setNegativeButton("Retry", null).create().show();
+                    //jika email dan password salah
+                    Toast.makeText(MainActivity.this, "Email dan Password Anda Salah", Toast.LENGTH_SHORT).show();
                 }
             }
         });
