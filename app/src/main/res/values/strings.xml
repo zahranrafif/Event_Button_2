@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginApp3</string>
+    <string name="app_name">LoginApp4</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsignin">Sign-In</string>
@@ -10,4 +10,15 @@
     <string name="txemail">Email Result</string>
     <string name="txpassword">Password Result</string>
     <string name="label2">Login Berhasil</string>
+    <string name="mDaftar">Registrasi</string>
+    <string name="mlogout">Logout</string>
+    <string name="ldaftar">Registrasi Akun</string>
+    <string name="enama">Masukkan Nama</string>
+    <string name="eemail">Masukkan Email</string>
+    <string name="epass">Masukkan Password</string>
+    <string name="erepass">Masukkan Password Kembali</string>
+    <string name="ealamat">Masukkan Alamat</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
 </resources>
