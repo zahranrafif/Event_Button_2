@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
     //deklarasi variabel untuk button
     Button btnLogin;
 
-    //deklrasi variabel untuk EditText
+    //Deklrasi variabel untuk EditText
     EditText edemail, edpassword;
 
-    //deklarasi variabel untuk menyimpan email dan password
+    //Deklarasi variabel untuk menyimpan email dan password
     String nama, password;
 
     @Override
