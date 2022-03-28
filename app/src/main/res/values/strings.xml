@@ -20,5 +20,11 @@
     <string name="ealamat">Masukkan Alamat</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
-
+    <string name="lihatdata">Lihat Data</string>
+    <string name="editdata">Edit Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama Kontak</string>
+    <string name="notel">Nomor Telepon</string>
 </resources>
