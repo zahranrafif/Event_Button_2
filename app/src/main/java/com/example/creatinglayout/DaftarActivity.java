@@ -42,7 +42,7 @@ public class DaftarActivity extends AppCompatActivity {
                         edtPassword.getText().toString().isEmpty() ||
                         edtepass.getText().toString().isEmpty())
                 {
-                    //menampilkan pesan notifikawsi jika seluruh Edittext wajib diisi
+                    //Menampilkan pesan notifikawsi jika seluruh Edittext wajib diisi
                     Snackbar.make(v, "Wajib isi seluruh data !!", Snackbar.LENGTH_LONG).show();
                 }
                 else
