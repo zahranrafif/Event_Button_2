@@ -34,7 +34,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="@string/loginpng"
+        android:contentDescription="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"

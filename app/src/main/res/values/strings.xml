@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginApp4</string>
+    <string name="app_name">ListViewApp</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsignin">Sign-In</string>
@@ -10,7 +10,7 @@
     <string name="txemail">Email Result</string>
     <string name="txpassword">Password Result</string>
     <string name="label2">Login Berhasil</string>
-    <string name="mDaftar">Registrasi</string>
+    <string name="mDaftar">Kontak</string>
     <string name="mlogout">Logout</string>
     <string name="ldaftar">Registrasi Akun</string>
     <string name="enama">Masukkan Nama</string>
@@ -27,4 +27,5 @@
     <string name="detailkontak">Detail Kontak</string>
     <string name="nama">Nama Kontak</string>
     <string name="notel">Nomor Telepon</string>
+    <string name="login">login</string>
 </resources>
